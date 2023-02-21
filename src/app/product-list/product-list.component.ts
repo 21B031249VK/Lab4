@@ -10,12 +10,16 @@ export class ProductListComponent {
 
   products = [...products];
 
+  openProduct(link: string){
+    window.open(link);
+  }
+
   shareTg(link: string) {
     var sharelink = "https://t.me/share/url?url="+link;
     window.open(sharelink);
   }
   shareWp(link: string) {
-    var sharelink = "https://web.whatsapp.com://send?text="+link;
+    var sharelink = "whatsapp://send?text= "+link;
     window.open(sharelink);
   }
 
