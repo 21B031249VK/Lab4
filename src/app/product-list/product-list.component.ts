@@ -10,8 +10,13 @@ export class ProductListComponent {
 
   products = [...products];
 
-  share() {
-    window.alert('The product has been shared!');
+  shareTg(link: string) {
+    var sharelink = "https://t.me/share/url?url="+link;
+    window.open(sharelink);
+  }
+  shareWp(link: string) {
+    var sharelink = "https://web.whatsapp.com://send?text="+link;
+    window.open(sharelink);
   }
 
   onNotify() {

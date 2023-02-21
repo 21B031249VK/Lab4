@@ -19,8 +19,11 @@
   
   <p *ngIf="product.description">Description: {{ product.description }}</p>
 
-  <button type="button" (click)="share()">
-  Share
+  <button type="button" (click)="shareTg(product.link)">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" alt = "telegram-share">
+</button>
+<button type="button" (click)="shareWp(product.link)">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png" alt = "whatsapp-share">
 </button>
 
 <app-product-alerts
