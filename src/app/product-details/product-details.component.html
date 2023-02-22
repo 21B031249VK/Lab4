@@ -7,4 +7,7 @@
   <p *ngIf="product.price">Cost: {{ product.price }} ₸</p>
   <p>{{ product.description }}</p>
   <button type="button" (click)="addToCart(product)">Buy</button>
+  <a [title]="product.name + ' in Kaspi.kz'" (click)="openProduct(product.link)">
+    Sourse
+    </a>
 </div>
